@@ -1,0 +1,282 @@
+/*Color Pallet:
+    #A23B72 - Magenta
+    #D6A184 - Peachy Tan
+    #FFFFFF - White
+    #000000 - Black
+    #6B234A - Dark Magenta
+ */
+
+#indexBody { //Exists
+    background-color: black;
+}
+
+#loginMap { //Exists
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+body {
+    background-color: white;
+    font-family: 'courier new', courier, monospace;
+}
+
+#logo { //Exists
+    color: #A23B72;
+    background-color: white;
+    text-align: center;
+    font-size: 40px;
+    width: 375px;
+    border-radius: 10px;
+    font-family: 'courier new', courier, monospace;
+    font-weight: bolder;
+}
+
+#logoTHE { //Exists
+    font-size: 20px;
+}
+
+.login { //Exists
+    background-color: #D6A184;
+    color: #A23B72;
+    float: right;
+    width: 40%;
+    border-radius: 10px;
+    text-align: center;
+    height: 620px;
+    margin-right: 5%;
+    font-family: 'courier new', courier, monospace;
+    font-weight: bold;
+}
+
+.createAccount { //Exists
+    background-color: #D6A184;
+    color: #A23B72;
+    float: left;
+    width: 40%;
+    text-align: center;
+    border-radius: 10px;
+    height: 620px;
+    font-size: 25px;
+    margin-left: 5%;
+    font-family: 'courier new', courier, monospace;
+    font-weight: bold;
+}
+
+#loginForm {
+    font-size: 25px;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    font-size: 18px;
+}
+
+#loginHeader { //Exists
+    font-size: 40px;
+}
+
+#createAccountHeader { //Exists
+    font-size: 40px;
+}
+
+input[type=submit], input[type=reset] {
+    background-color: white;
+    border: 3px solid #6B234A;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: 'courier new', courier, monospace;
+    font-weight: bolder;
+    color: #6B234A;
+}
+
+.loginDesc { //Exists
+    color: black;
+    width: 60%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    font-family: 'courier new', courier, monospace;
+    font-weight: bold;
+}
+
+#you { //Exists
+    color: #A23B72;
+}
+
+.nav { //Exists
+    background-color: #6B234A;
+    color: white;
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+    height: auto;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+#stats { //Exists
+    font-size: 30px;
+    color: #6B234A;
+}
+
+.stats { //Exists
+    background-color: #D6A184;
+    width: 30%;
+    height: 500px;
+    float: left;
+    padding-left: 10px;
+    border-radius: 10px;
+    display: block;
+    margin-left: 1%;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.health { //Exists
+    background-color: #D6A184;
+    width: 60%;
+    height: 100px;
+    float: right;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 1%;
+    display: block;
+    margin-bottom: 40px;
+}
+
+#inventory { //Exists
+    font-size: 30px;
+    color: #6B234A;
+}
+
+.inventory { //Exists
+    background-color: #D6A184;
+    width: 60%;
+    height: 350px;
+    float: right;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 1%;
+    display: block;
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bookstore { //Exists
+    background-color: #D6A184;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 310px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+
+#bookstore, #apothecary { //Bookstore, Apothecary Exists
+    color: #6B234A;
+    font-size: 40px;
+}
+
+#potions { //Exists
+    font-size: 30px;
+}
+
+.apothecary { //Exists
+    background-color: #D6A184;
+    text-align: center;
+    margin-left: auto;
+    margin-top: 10px;
+    height: 730px;
+    grid-area: 1/ 2/ span 2;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.activeQuest {
+    background-color: #D6A184;
+    width: 90%;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    display: block;
+}
+
+#currentQuestName { //Exists
+    font-size: 35px;
+}
+
+#currentQuestReward { //Exists
+    font-size: 25px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+#currentQuestDescription { //Exists
+    font-size: 20px;
+}
+
+.helpWanted { //Exists
+    background-color: #D6A184;
+    margin-left: 1%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: #A23B72;
+    font-size: 45px;
+}
+
+#helpWantedName { //Exists
+    font-size: 25px;
+}
+
+#helpWantedReward { //Exists
+    font-size: 20px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+#helpWantedDescription { //Exists
+    font-size: 15px;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 40%);
+}
+
+input[type=button] {
+    background-color: white;
+    border: 3px solid #6B234A;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'courier new', courier, monospace;
+    font-weight: bolder;
+    color: #6B234A;
+}
+
+.error {
+    font-family: 'courier new', courier, monospace;
+    font-size: 20px;
+    padding: 10px;
+    color: darkred;
+    text-transform: uppercase;
+}
