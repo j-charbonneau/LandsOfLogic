@@ -6,11 +6,11 @@
     #6B234A - Dark Magenta
  */
 
-#indexBody { //Exists
+#indexBody { 
     background-color: black;
 }
 
-#loginMap { //Exists
+#loginMap { 
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -22,7 +22,7 @@ body {
     font-family: 'courier new', courier, monospace;
 }
 
-#logo { //Exists
+#logo { 
     color: #A23B72;
     background-color: white;
     text-align: center;
@@ -33,11 +33,11 @@ body {
     font-weight: bolder;
 }
 
-#logoTHE { //Exists
+#logoTHE { 
     font-size: 20px;
 }
 
-.login { //Exists
+.login { 
     background-color: #D6A184;
     color: #A23B72;
     float: right;
@@ -50,7 +50,7 @@ body {
     font-weight: bold;
 }
 
-.createAccount { //Exists
+.createAccount { 
     background-color: #D6A184;
     color: #A23B72;
     float: left;
@@ -72,11 +72,11 @@ input[type=text], input[type=password], input[type=email] {
     font-size: 18px;
 }
 
-#loginHeader { //Exists
+#loginHeader { 
     font-size: 40px;
 }
 
-#createAccountHeader { //Exists
+#createAccountHeader { 
     font-size: 40px;
 }
 
@@ -90,7 +90,7 @@ input[type=submit], input[type=reset] {
     color: #6B234A;
 }
 
-.loginDesc { //Exists
+.loginDesc { 
     color: black;
     width: 60%;
     text-align: center;
@@ -102,28 +102,39 @@ input[type=submit], input[type=reset] {
     font-weight: bold;
 }
 
-#you { //Exists
+#you { 
     color: #A23B72;
 }
 
-.nav { //Exists
-    background-color: #6B234A;
-    color: white;
-    width: 20%;
-    text-align: center;
-    display: inline-block;
-    height: auto;
-    border-radius: 10px;
-    margin-right: auto;
-    margin-bottom: 40px;
+nav {
+    margin-top: 20px;
+    text-align: left; 
 }
 
-#stats { //Exists
+
+.nav-item {
+    background-color: #6B234A;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 6px 16px;
+}
+
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'courier new', courier, monospace;
+}
+
+#stats { 
     font-size: 30px;
     color: #6B234A;
 }
 
-.stats { //Exists
+.stats {
     background-color: #D6A184;
     width: 30%;
     height: 500px;
@@ -136,7 +147,7 @@ input[type=submit], input[type=reset] {
     font-weight: bold;
 }
 
-.health { //Exists
+.health { 
     background-color: #D6A184;
     width: 60%;
     height: 100px;
@@ -149,12 +160,13 @@ input[type=submit], input[type=reset] {
     margin-bottom: 40px;
 }
 
-#inventory { //Exists
+#inventory { 
     font-size: 30px;
     color: #6B234A;
+    height: 100px;
 }
 
-.inventory { //Exists
+.inventory { 
     background-color: #D6A184;
     width: 60%;
     height: 350px;
@@ -171,7 +183,7 @@ a {
     text-decoration: none;
 }
 
-.bookstore { //Exists
+.bookstore { 
     background-color: #D6A184;
     text-align: center;
     margin-left: auto;
@@ -185,16 +197,16 @@ a {
     font-weight: bold;
 }
 
-#bookstore, #apothecary { //Bookstore, Apothecary Exists
+#bookstore, #apothecary { 
     color: #6B234A;
     font-size: 40px;
 }
 
-#potions { //Exists
+#potions { 
     font-size: 30px;
 }
 
-.apothecary { //Exists
+.apothecary { 
     background-color: #D6A184;
     text-align: center;
     margin-left: auto;
@@ -218,21 +230,21 @@ a {
     display: block;
 }
 
-#currentQuestName { //Exists
+#currentQuestName {
     font-size: 35px;
 }
 
-#currentQuestReward { //Exists
+#currentQuestReward { 
     font-size: 25px;
     font-style: italic;
     font-weight: lighter;
 }
 
-#currentQuestDescription { //Exists
+#currentQuestDescription { 
     font-size: 20px;
 }
 
-.helpWanted { //Exists
+.helpWanted {
     background-color: #D6A184;
     margin-left: 1%;
     padding: 10px;
@@ -243,17 +255,17 @@ a {
     font-size: 45px;
 }
 
-#helpWantedName { //Exists
+#helpWantedName { 
     font-size: 25px;
 }
 
-#helpWantedReward { //Exists
+#helpWantedReward { 
     font-size: 20px;
     font-style: italic;
     font-weight: lighter;
 }
 
-#helpWantedDescription { //Exists
+#helpWantedDescription { 
     font-size: 15px;
 }
 
@@ -279,4 +291,41 @@ input[type=button] {
     padding: 10px;
     color: darkred;
     text-transform: uppercase;
+}
+
+#inventoryTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#inventoryTable th,
+#inventoryTable td {
+    padding: 6px 8px;
+    border-bottom: 1px solid #4B1D3F;
+    text-align: left;
+}
+
+#inventoryTable input[type="submit"] {
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 2px solid #4B1D3F;
+    background: #fff;
+    color: #4B1D3F;
+    cursor: pointer;
+    display: inline-block;
+    width: auto;
+}
+
+#inventoryTable input[type="submit"]:hover {
+    background: #f2e6ff;
+}
+
+.inventory {
+    background: #c69c6d;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    display: block;
 }

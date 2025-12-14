@@ -1,20 +1,38 @@
 <?php
     session_start();
 
-    if(isset($_SESSION['id'])){
-        global $_SESSION;
-        $character = $_SESSION['character'];
-        $id = $_SESSION['id'];
-    } else {
-        header("location:login.php");
+    if (!isset($_SESSION['id'])) {
+        header("Location: login.php");
+        exit;
     }
 
-    if (isset($_SESSION['questId'])) {
-        $questId = $_SESSION['questId'];
+    $character = $_SESSION['character'];
+    $id = $_SESSION['id'];
+
+    if (isset($_GET['questId'])) {
+        $questId = (int)$_GET['questId'];
+        $_SESSION['questId'] = $questId;
+    } elseif (isset($_SESSION['questId'])) {
+        $questId = (int)$_SESSION['questId'];
     } else {
-        header("location:quests.php");
+        header("Location: quests.php");
+        exit;
     }
 
-    $conn = new mysqli("localhost", "root", "", "LandsOfLogic");
-    mysqli_query($conn, "UPDATE quests SET QuestStatus = 0 WHERE QuestId = $questId");
+    $conn = mysqli_connect("sql110.infinityfree.com", "if0_40582300", "uj0krRpEXI");
+
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+    if (!mysqli_select_db($conn, "if0_40582300_LandsOfLogic")) {
+        die("Database select failed: " . mysqli_error($conn));
+    }
+
+    $sql = "UPDATE quests SET questStatus = 0 WHERE questId = $questId";
+    mysqli_query($conn, $sql);
+
+    unset($_SESSION['questId']);
+
+    header("Location: quests.php");
+    exit;
 ?>

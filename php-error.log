@@ -1,0 +1,618 @@
+[07-Dec-2025 17:31:30 America/New_York] [checkLogin]Script start
+[07-Dec-2025 17:31:30 America/New_York] [checkLogin]After session start
+[07-Dec-2025 17:31:30 America/New_York] [checkLogin]before msqli_connect
+[07-Dec-2025 17:31:30 America/New_York] [checkLogin]after mysqli_connect okay
+[07-Dec-2025 17:31:30 America/New_York] [checkLogin]after selectdb ok
+[07-Dec-2025 17:31:30 America/New_York] [checkLogin]After Escaping input
+[07-Dec-2025 17:31:30 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'Jackie'
+[07-Dec-2025 17:31:30 America/New_York] [checkLogin]After query okay
+[07-Dec-2025 17:31:30 America/New_York] [checkLogin]Rows found: 1
+[07-Dec-2025 17:31:30 America/New_York] [checkLogin]User Row: jackie
+[07-Dec-2025 17:31:30 America/New_York] [checkLogin]Password wrong
+[07-Dec-2025 17:31:30 America/New_York] [checkLogin]Script end
+[07-Dec-2025 17:32:17 America/New_York] [checkLogin]Script start
+[07-Dec-2025 17:32:17 America/New_York] [checkLogin]After session start
+[07-Dec-2025 17:32:17 America/New_York] [checkLogin]before msqli_connect
+[07-Dec-2025 17:32:17 America/New_York] [checkLogin]after mysqli_connect okay
+[07-Dec-2025 17:32:17 America/New_York] [checkLogin]after selectdb ok
+[07-Dec-2025 17:32:17 America/New_York] [checkLogin]After Escaping input
+[07-Dec-2025 17:32:17 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'Jackie'
+[07-Dec-2025 17:32:17 America/New_York] [checkLogin]After query okay
+[07-Dec-2025 17:32:17 America/New_York] [checkLogin]Rows found: 1
+[07-Dec-2025 17:32:17 America/New_York] [checkLogin]User Row: jackie
+[07-Dec-2025 17:32:17 America/New_York] [checkLogin]Password wrong
+[07-Dec-2025 17:32:17 America/New_York] [checkLogin]Script end
+[07-Dec-2025 17:32:47 America/New_York] [checkLogin]Script start
+[07-Dec-2025 17:32:47 America/New_York] [checkLogin]After session start
+[07-Dec-2025 17:32:47 America/New_York] [checkLogin]before msqli_connect
+[07-Dec-2025 17:32:47 America/New_York] [checkLogin]after mysqli_connect okay
+[07-Dec-2025 17:32:47 America/New_York] [checkLogin]after selectdb ok
+[07-Dec-2025 17:32:47 America/New_York] [checkLogin]After Escaping input
+[07-Dec-2025 17:32:47 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'Jackie'
+[07-Dec-2025 17:32:47 America/New_York] [checkLogin]After query okay
+[07-Dec-2025 17:32:47 America/New_York] [checkLogin]Rows found: 1
+[07-Dec-2025 17:32:47 America/New_York] [checkLogin]User Row: jackie
+[07-Dec-2025 17:32:47 America/New_York] [checkLogin]Password wrong
+[07-Dec-2025 17:32:47 America/New_York] [checkLogin]Script end
+[07-Dec-2025 17:33:42 America/New_York] [checkLogin]Script start
+[07-Dec-2025 17:33:42 America/New_York] [checkLogin]After session start
+[07-Dec-2025 17:33:42 America/New_York] [checkLogin]before msqli_connect
+[07-Dec-2025 17:33:42 America/New_York] [checkLogin]after mysqli_connect okay
+[07-Dec-2025 17:33:42 America/New_York] [checkLogin]after selectdb ok
+[07-Dec-2025 17:33:42 America/New_York] [checkLogin]After Escaping input
+[07-Dec-2025 17:33:42 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'jackie'
+[07-Dec-2025 17:33:42 America/New_York] [checkLogin]After query okay
+[07-Dec-2025 17:33:42 America/New_York] [checkLogin]Rows found: 1
+[07-Dec-2025 17:33:42 America/New_York] [checkLogin]User Row: jackie
+[07-Dec-2025 17:33:42 America/New_York] [checkLogin]Loggin in
+[07-Dec-2025 17:33:42 America/New_York] [checkLogin]Script end
+[07-Dec-2025 17:33:51 America/New_York] [checkLogin]Script start
+[07-Dec-2025 17:33:51 America/New_York] [checkLogin]After session start
+[07-Dec-2025 17:33:51 America/New_York] [checkLogin]before msqli_connect
+[07-Dec-2025 17:33:51 America/New_York] [checkLogin]after mysqli_connect okay
+[07-Dec-2025 17:33:51 America/New_York] [checkLogin]after selectdb ok
+[07-Dec-2025 17:33:51 America/New_York] [checkLogin]After Escaping input
+[07-Dec-2025 17:33:51 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'jackie'
+[07-Dec-2025 17:33:51 America/New_York] [checkLogin]After query okay
+[07-Dec-2025 17:33:51 America/New_York] [checkLogin]Rows found: 1
+[07-Dec-2025 17:33:51 America/New_York] [checkLogin]User Row: jackie
+[07-Dec-2025 17:33:51 America/New_York] [checkLogin]Loggin in
+[07-Dec-2025 17:33:51 America/New_York] [checkLogin]Script end
+[07-Dec-2025 17:34:01 America/New_York] [checkLogin]Script start
+[07-Dec-2025 17:34:01 America/New_York] [checkLogin]After session start
+[07-Dec-2025 17:34:01 America/New_York] [checkLogin]before msqli_connect
+[07-Dec-2025 17:34:01 America/New_York] [checkLogin]after mysqli_connect okay
+[07-Dec-2025 17:34:01 America/New_York] [checkLogin]after selectdb ok
+[07-Dec-2025 17:34:01 America/New_York] [checkLogin]After Escaping input
+[07-Dec-2025 17:34:01 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'Jackie'
+[07-Dec-2025 17:34:01 America/New_York] [checkLogin]After query okay
+[07-Dec-2025 17:34:01 America/New_York] [checkLogin]Rows found: 1
+[07-Dec-2025 17:34:01 America/New_York] [checkLogin]User Row: jackie
+[07-Dec-2025 17:34:01 America/New_York] [checkLogin]Password wrong
+[07-Dec-2025 17:34:01 America/New_York] [checkLogin]Script end
+[07-Dec-2025 17:37:06 America/New_York] [checkLogin]Script start
+[07-Dec-2025 17:37:06 America/New_York] [checkLogin]After session start
+[07-Dec-2025 17:37:06 America/New_York] [checkLogin]before msqli_connect
+[07-Dec-2025 17:37:06 America/New_York] [checkLogin]after mysqli_connect okay
+[07-Dec-2025 17:37:06 America/New_York] [checkLogin]after selectdb ok
+[07-Dec-2025 17:37:06 America/New_York] [checkLogin]After Escaping input
+[07-Dec-2025 17:37:06 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'jackie'
+[07-Dec-2025 17:37:06 America/New_York] [checkLogin]After query okay
+[07-Dec-2025 17:37:06 America/New_York] [checkLogin]Rows found: 1
+[07-Dec-2025 17:37:06 America/New_York] [checkLogin]User Row: jackie
+[07-Dec-2025 17:37:06 America/New_York] [checkLogin]Loggin in
+[07-Dec-2025 17:37:06 America/New_York] [checkLogin]Script end
+[07-Dec-2025 17:42:09 America/New_York] [checkLogin]Script start
+[07-Dec-2025 17:42:09 America/New_York] [checkLogin]After session start
+[07-Dec-2025 17:42:09 America/New_York] [checkLogin]before msqli_connect
+[07-Dec-2025 17:42:09 America/New_York] [checkLogin]after mysqli_connect okay
+[07-Dec-2025 17:42:09 America/New_York] [checkLogin]after selectdb ok
+[07-Dec-2025 17:42:09 America/New_York] [checkLogin]After Escaping input
+[07-Dec-2025 17:42:09 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'jackie'
+[07-Dec-2025 17:42:09 America/New_York] [checkLogin]After query okay
+[07-Dec-2025 17:42:09 America/New_York] [checkLogin]Rows found: 1
+[07-Dec-2025 17:42:09 America/New_York] [checkLogin]User Row: jackie
+[07-Dec-2025 17:42:09 America/New_York] [checkLogin]Loggin in
+[07-Dec-2025 17:42:09 America/New_York] [checkLogin]Script end
+[07-Dec-2025 17:46:57 America/New_York] [checkLogin]Script start
+[07-Dec-2025 17:46:57 America/New_York] [checkLogin]After session start
+[07-Dec-2025 17:46:57 America/New_York] [checkLogin]before msqli_connect
+[07-Dec-2025 17:46:57 America/New_York] [checkLogin]after mysqli_connect okay
+[07-Dec-2025 17:46:57 America/New_York] [checkLogin]after selectdb ok
+[07-Dec-2025 17:46:57 America/New_York] [checkLogin]After Escaping input
+[07-Dec-2025 17:46:57 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'jackie'
+[07-Dec-2025 17:46:57 America/New_York] [checkLogin]After query okay
+[07-Dec-2025 17:46:57 America/New_York] [checkLogin]Rows found: 1
+[07-Dec-2025 17:46:57 America/New_York] [checkLogin]User Row: jackie
+[07-Dec-2025 17:46:57 America/New_York] [checkLogin]Loggin in
+[07-Dec-2025 17:46:57 America/New_York] [checkLogin]Script end
+[07-Dec-2025 17:48:50 America/New_York] [checkLogin]Script start
+[07-Dec-2025 17:48:50 America/New_York] [checkLogin]After session start
+[07-Dec-2025 17:48:50 America/New_York] [checkLogin]before msqli_connect
+[07-Dec-2025 17:48:50 America/New_York] [checkLogin]after mysqli_connect okay
+[07-Dec-2025 17:48:50 America/New_York] [checkLogin]after selectdb ok
+[07-Dec-2025 17:48:50 America/New_York] [checkLogin]After Escaping input
+[07-Dec-2025 17:48:50 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'jackie'
+[07-Dec-2025 17:48:50 America/New_York] [checkLogin]After query okay
+[07-Dec-2025 17:48:50 America/New_York] [checkLogin]Rows found: 1
+[07-Dec-2025 17:48:50 America/New_York] [checkLogin]User Row: jackie
+[07-Dec-2025 17:48:50 America/New_York] [checkLogin]Loggin in
+[07-Dec-2025 17:48:50 America/New_York] [checkLogin]Script end
+[07-Dec-2025 17:51:00 America/New_York] [checkLogin]Script start
+[07-Dec-2025 17:51:00 America/New_York] [checkLogin]After session start
+[07-Dec-2025 17:51:00 America/New_York] [checkLogin]before msqli_connect
+[07-Dec-2025 17:51:00 America/New_York] [checkLogin]after mysqli_connect okay
+[07-Dec-2025 17:51:00 America/New_York] [checkLogin]after selectdb ok
+[07-Dec-2025 17:51:00 America/New_York] [checkLogin]After Escaping input
+[07-Dec-2025 17:51:00 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'jackie'
+[07-Dec-2025 17:51:00 America/New_York] [checkLogin]After query okay
+[07-Dec-2025 17:51:00 America/New_York] [checkLogin]Rows found: 1
+[07-Dec-2025 17:51:00 America/New_York] [checkLogin]User Row: jackie
+[07-Dec-2025 17:51:00 America/New_York] [checkLogin]Loggin in
+[07-Dec-2025 17:51:00 America/New_York] [checkLogin]Script end
+[08-Dec-2025 17:11:56 America/New_York] [checkLogin]Script start
+[08-Dec-2025 17:11:56 America/New_York] [checkLogin]After session start
+[08-Dec-2025 17:11:56 America/New_York] [checkLogin]before msqli_connect
+[08-Dec-2025 17:11:56 America/New_York] [checkLogin]after mysqli_connect okay
+[08-Dec-2025 17:11:56 America/New_York] [checkLogin]after selectdb ok
+[08-Dec-2025 17:11:56 America/New_York] [checkLogin]After Escaping input
+[08-Dec-2025 17:11:56 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'jackie'
+[08-Dec-2025 17:11:56 America/New_York] [checkLogin]After query okay
+[08-Dec-2025 17:11:56 America/New_York] [checkLogin]Rows found: 1
+[08-Dec-2025 17:11:56 America/New_York] [checkLogin]User Row: jackie
+[08-Dec-2025 17:11:56 America/New_York] [checkLogin]Loggin in
+[08-Dec-2025 17:11:56 America/New_York] [checkLogin]Script end
+[08-Dec-2025 17:12:30 America/New_York] [checkLogin]Script start
+[08-Dec-2025 17:12:30 America/New_York] [checkLogin]After session start
+[08-Dec-2025 17:12:30 America/New_York] [checkLogin]before msqli_connect
+[08-Dec-2025 17:12:30 America/New_York] [checkLogin]after mysqli_connect okay
+[08-Dec-2025 17:12:30 America/New_York] [checkLogin]after selectdb ok
+[08-Dec-2025 17:12:30 America/New_York] [checkLogin]After Escaping input
+[08-Dec-2025 17:12:30 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'jackie'
+[08-Dec-2025 17:12:30 America/New_York] [checkLogin]After query okay
+[08-Dec-2025 17:12:30 America/New_York] [checkLogin]Rows found: 1
+[08-Dec-2025 17:12:30 America/New_York] [checkLogin]User Row: jackie
+[08-Dec-2025 17:12:30 America/New_York] [checkLogin]Loggin in
+[08-Dec-2025 17:12:30 America/New_York] [checkLogin]Script end
+[08-Dec-2025 17:22:53 America/New_York] [checkLogin]Script start
+[08-Dec-2025 17:22:53 America/New_York] [checkLogin]After session start
+[08-Dec-2025 17:22:53 America/New_York] [checkLogin]before msqli_connect
+[08-Dec-2025 17:22:53 America/New_York] [checkLogin]after mysqli_connect okay
+[08-Dec-2025 17:22:53 America/New_York] [checkLogin]after selectdb ok
+[08-Dec-2025 17:22:53 America/New_York] [checkLogin]After Escaping input
+[08-Dec-2025 17:22:53 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'jackie'
+[08-Dec-2025 17:22:53 America/New_York] [checkLogin]After query okay
+[08-Dec-2025 17:22:53 America/New_York] [checkLogin]Rows found: 1
+[08-Dec-2025 17:22:53 America/New_York] [checkLogin]User Row: jackie
+[08-Dec-2025 17:22:53 America/New_York] [checkLogin]Loggin in
+[08-Dec-2025 17:22:53 America/New_York] [checkLogin]Script end
+[08-Dec-2025 17:28:18 America/New_York] [checkLogin]Script start
+[08-Dec-2025 17:28:18 America/New_York] [checkLogin]After session start
+[08-Dec-2025 17:28:18 America/New_York] [checkLogin]before msqli_connect
+[08-Dec-2025 17:28:18 America/New_York] [checkLogin]after mysqli_connect okay
+[08-Dec-2025 17:28:18 America/New_York] [checkLogin]after selectdb ok
+[08-Dec-2025 17:28:18 America/New_York] [checkLogin]After Escaping input
+[08-Dec-2025 17:28:18 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'jackie'
+[08-Dec-2025 17:28:18 America/New_York] [checkLogin]After query okay
+[08-Dec-2025 17:28:18 America/New_York] [checkLogin]Rows found: 1
+[08-Dec-2025 17:28:18 America/New_York] [checkLogin]User Row: jackie
+[08-Dec-2025 17:28:18 America/New_York] [checkLogin]Loggin in
+[08-Dec-2025 17:28:18 America/New_York] [checkLogin]Script end
+[08-Dec-2025 17:29:05 America/New_York] [checkLogin]Script start
+[08-Dec-2025 17:29:05 America/New_York] [checkLogin]After session start
+[08-Dec-2025 17:29:05 America/New_York] [checkLogin]before msqli_connect
+[08-Dec-2025 17:29:05 America/New_York] [checkLogin]after mysqli_connect okay
+[08-Dec-2025 17:29:05 America/New_York] [checkLogin]after selectdb ok
+[08-Dec-2025 17:29:05 America/New_York] [checkLogin]After Escaping input
+[08-Dec-2025 17:29:05 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'jackie'
+[08-Dec-2025 17:29:05 America/New_York] [checkLogin]After query okay
+[08-Dec-2025 17:29:05 America/New_York] [checkLogin]Rows found: 1
+[08-Dec-2025 17:29:05 America/New_York] [checkLogin]User Row: jackie
+[08-Dec-2025 17:29:05 America/New_York] [checkLogin]Loggin in
+[08-Dec-2025 17:29:05 America/New_York] [checkLogin]Script end
+[08-Dec-2025 17:29:54 America/New_York] [checkLogin]Script start
+[08-Dec-2025 17:29:54 America/New_York] [checkLogin]After session start
+[08-Dec-2025 17:29:54 America/New_York] [checkLogin]before msqli_connect
+[08-Dec-2025 17:29:54 America/New_York] [checkLogin]after mysqli_connect okay
+[08-Dec-2025 17:29:54 America/New_York] [checkLogin]after selectdb ok
+[08-Dec-2025 17:29:54 America/New_York] [checkLogin]After Escaping input
+[08-Dec-2025 17:29:54 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'jackie'
+[08-Dec-2025 17:29:54 America/New_York] [checkLogin]After query okay
+[08-Dec-2025 17:29:54 America/New_York] [checkLogin]Rows found: 1
+[08-Dec-2025 17:29:54 America/New_York] [checkLogin]User Row: jackie
+[08-Dec-2025 17:29:54 America/New_York] [checkLogin]Loggin in
+[08-Dec-2025 17:29:54 America/New_York] [checkLogin]Script end
+[08-Dec-2025 18:23:06 America/New_York] [checkLogin]Script start
+[08-Dec-2025 18:23:06 America/New_York] [checkLogin]After session start
+[08-Dec-2025 18:23:06 America/New_York] [checkLogin]before msqli_connect
+[08-Dec-2025 18:23:06 America/New_York] [checkLogin]after mysqli_connect okay
+[08-Dec-2025 18:23:06 America/New_York] [checkLogin]after selectdb ok
+[08-Dec-2025 18:23:06 America/New_York] [checkLogin]After Escaping input
+[08-Dec-2025 18:23:06 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'Mom#1'
+[08-Dec-2025 18:23:06 America/New_York] [checkLogin]After query okay
+[08-Dec-2025 18:23:06 America/New_York] [checkLogin]Rows found: 0
+[08-Dec-2025 18:23:06 America/New_York] [checkLogin]user wrong
+[08-Dec-2025 18:23:06 America/New_York] [checkLogin]Script end
+[08-Dec-2025 18:27:17 America/New_York] [checkLogin]Script start
+[08-Dec-2025 18:27:17 America/New_York] [checkLogin]After session start
+[08-Dec-2025 18:27:17 America/New_York] [checkLogin]before msqli_connect
+[08-Dec-2025 18:27:17 America/New_York] [checkLogin]after mysqli_connect okay
+[08-Dec-2025 18:27:17 America/New_York] [checkLogin]after selectdb ok
+[08-Dec-2025 18:27:17 America/New_York] [checkLogin]After Escaping input
+[08-Dec-2025 18:27:17 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'Rick@charbonneau.me'
+[08-Dec-2025 18:27:17 America/New_York] [checkLogin]After query okay
+[08-Dec-2025 18:27:17 America/New_York] [checkLogin]Rows found: 0
+[08-Dec-2025 18:27:17 America/New_York] [checkLogin]user wrong
+[08-Dec-2025 18:27:17 America/New_York] [checkLogin]Script end
+[08-Dec-2025 18:29:57 America/New_York] [checkLogin]Script start
+[08-Dec-2025 18:29:57 America/New_York] [checkLogin]After session start
+[08-Dec-2025 18:29:57 America/New_York] [checkLogin]before msqli_connect
+[08-Dec-2025 18:29:57 America/New_York] [checkLogin]after mysqli_connect okay
+[08-Dec-2025 18:29:57 America/New_York] [checkLogin]after selectdb ok
+[08-Dec-2025 18:29:57 America/New_York] [checkLogin]After Escaping input
+[08-Dec-2025 18:29:57 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'poopalini'
+[08-Dec-2025 18:29:57 America/New_York] [checkLogin]After query okay
+[08-Dec-2025 18:29:57 America/New_York] [checkLogin]Rows found: 0
+[08-Dec-2025 18:29:57 America/New_York] [checkLogin]user wrong
+[08-Dec-2025 18:29:57 America/New_York] [checkLogin]Script end
+[08-Dec-2025 18:30:07 America/New_York] [checkLogin]Script start
+[08-Dec-2025 18:30:07 America/New_York] [checkLogin]After session start
+[08-Dec-2025 18:30:07 America/New_York] [checkLogin]before msqli_connect
+[08-Dec-2025 18:30:07 America/New_York] [checkLogin]after mysqli_connect okay
+[08-Dec-2025 18:30:07 America/New_York] [checkLogin]after selectdb ok
+[08-Dec-2025 18:30:07 America/New_York] [checkLogin]After Escaping input
+[08-Dec-2025 18:30:07 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'poopalini'
+[08-Dec-2025 18:30:07 America/New_York] [checkLogin]After query okay
+[08-Dec-2025 18:30:07 America/New_York] [checkLogin]Rows found: 0
+[08-Dec-2025 18:30:07 America/New_York] [checkLogin]user wrong
+[08-Dec-2025 18:30:07 America/New_York] [checkLogin]Script end
+[08-Dec-2025 19:07:14 America/New_York] [checkLogin]Script start
+[08-Dec-2025 19:07:14 America/New_York] [checkLogin]After session start
+[08-Dec-2025 19:07:14 America/New_York] [checkLogin]before msqli_connect
+[08-Dec-2025 19:07:14 America/New_York] [checkLogin]after mysqli_connect okay
+[08-Dec-2025 19:07:14 America/New_York] [checkLogin]after selectdb ok
+[08-Dec-2025 19:07:14 America/New_York] [checkLogin]After Escaping input
+[08-Dec-2025 19:07:14 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'jackie'
+[08-Dec-2025 19:07:14 America/New_York] [checkLogin]After query okay
+[08-Dec-2025 19:07:14 America/New_York] [checkLogin]Rows found: 1
+[08-Dec-2025 19:07:14 America/New_York] [checkLogin]User Row: jackie
+[08-Dec-2025 19:07:14 America/New_York] [checkLogin]Loggin in
+[08-Dec-2025 19:07:14 America/New_York] [checkLogin]Script end
+[09-Dec-2025 19:29:18 America/New_York] [checkLogin]Script start
+[09-Dec-2025 19:29:18 America/New_York] [checkLogin]After session start
+[09-Dec-2025 19:29:18 America/New_York] [checkLogin]before msqli_connect
+[09-Dec-2025 19:29:18 America/New_York] [checkLogin]after mysqli_connect okay
+[09-Dec-2025 19:29:18 America/New_York] [checkLogin]after selectdb ok
+[09-Dec-2025 19:29:18 America/New_York] [checkLogin]After Escaping input
+[09-Dec-2025 19:29:18 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'poopalini'
+[09-Dec-2025 19:29:18 America/New_York] [checkLogin]After query okay
+[09-Dec-2025 19:29:18 America/New_York] [checkLogin]Rows found: 1
+[09-Dec-2025 19:29:18 America/New_York] [checkLogin]User Row: poopalini
+[09-Dec-2025 19:29:18 America/New_York] [checkLogin]Loggin in
+[09-Dec-2025 19:29:18 America/New_York] [checkLogin]Script end
+[09-Dec-2025 19:36:12 America/New_York] [checkLogin]Script start
+[09-Dec-2025 19:36:12 America/New_York] [checkLogin]After session start
+[09-Dec-2025 19:36:12 America/New_York] [checkLogin]before msqli_connect
+[09-Dec-2025 19:36:12 America/New_York] [checkLogin]after mysqli_connect okay
+[09-Dec-2025 19:36:12 America/New_York] [checkLogin]after selectdb ok
+[09-Dec-2025 19:36:12 America/New_York] [checkLogin]After Escaping input
+[09-Dec-2025 19:36:12 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'poopalini'
+[09-Dec-2025 19:36:12 America/New_York] [checkLogin]After query okay
+[09-Dec-2025 19:36:12 America/New_York] [checkLogin]Rows found: 1
+[09-Dec-2025 19:36:12 America/New_York] [checkLogin]User Row: poopalini
+[09-Dec-2025 19:36:12 America/New_York] [checkLogin]Loggin in
+[09-Dec-2025 19:36:12 America/New_York] [checkLogin]Script end
+[09-Dec-2025 19:37:03 America/New_York] [checkLogin]Script start
+[09-Dec-2025 19:37:03 America/New_York] [checkLogin]After session start
+[09-Dec-2025 19:37:03 America/New_York] [checkLogin]before msqli_connect
+[09-Dec-2025 19:37:03 America/New_York] [checkLogin]after mysqli_connect okay
+[09-Dec-2025 19:37:03 America/New_York] [checkLogin]after selectdb ok
+[09-Dec-2025 19:37:03 America/New_York] [checkLogin]After Escaping input
+[09-Dec-2025 19:37:03 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'poopalini'
+[09-Dec-2025 19:37:03 America/New_York] [checkLogin]After query okay
+[09-Dec-2025 19:37:03 America/New_York] [checkLogin]Rows found: 1
+[09-Dec-2025 19:37:03 America/New_York] [checkLogin]User Row: poopalini
+[09-Dec-2025 19:37:03 America/New_York] [checkLogin]Password wrong
+[09-Dec-2025 19:37:03 America/New_York] [checkLogin]Script end
+[09-Dec-2025 19:37:08 America/New_York] [checkLogin]Script start
+[09-Dec-2025 19:37:08 America/New_York] [checkLogin]After session start
+[09-Dec-2025 19:37:08 America/New_York] [checkLogin]before msqli_connect
+[09-Dec-2025 19:37:08 America/New_York] [checkLogin]after mysqli_connect okay
+[09-Dec-2025 19:37:08 America/New_York] [checkLogin]after selectdb ok
+[09-Dec-2025 19:37:08 America/New_York] [checkLogin]After Escaping input
+[09-Dec-2025 19:37:08 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'poopalini'
+[09-Dec-2025 19:37:08 America/New_York] [checkLogin]After query okay
+[09-Dec-2025 19:37:08 America/New_York] [checkLogin]Rows found: 1
+[09-Dec-2025 19:37:08 America/New_York] [checkLogin]User Row: poopalini
+[09-Dec-2025 19:37:08 America/New_York] [checkLogin]Loggin in
+[09-Dec-2025 19:37:08 America/New_York] [checkLogin]Script end
+[09-Dec-2025 20:05:29 America/New_York] [checkLogin]Script start
+[09-Dec-2025 20:05:29 America/New_York] [checkLogin]After session start
+[09-Dec-2025 20:05:29 America/New_York] [checkLogin]before msqli_connect
+[09-Dec-2025 20:05:29 America/New_York] [checkLogin]after mysqli_connect okay
+[09-Dec-2025 20:05:29 America/New_York] [checkLogin]after selectdb ok
+[09-Dec-2025 20:05:29 America/New_York] [checkLogin]After Escaping input
+[09-Dec-2025 20:05:29 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'jackie'
+[09-Dec-2025 20:05:29 America/New_York] [checkLogin]After query okay
+[09-Dec-2025 20:05:29 America/New_York] [checkLogin]Rows found: 1
+[09-Dec-2025 20:05:29 America/New_York] [checkLogin]User Row: jackie
+[09-Dec-2025 20:05:29 America/New_York] [checkLogin]Loggin in
+[09-Dec-2025 20:05:29 America/New_York] [checkLogin]Script end
+[09-Dec-2025 20:06:03 America/New_York] [checkLogin]Script start
+[09-Dec-2025 20:06:03 America/New_York] [checkLogin]After session start
+[09-Dec-2025 20:06:03 America/New_York] [checkLogin]before msqli_connect
+[09-Dec-2025 20:06:03 America/New_York] [checkLogin]after mysqli_connect okay
+[09-Dec-2025 20:06:03 America/New_York] [checkLogin]after selectdb ok
+[09-Dec-2025 20:06:03 America/New_York] [checkLogin]After Escaping input
+[09-Dec-2025 20:06:03 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'poopalini'
+[09-Dec-2025 20:06:03 America/New_York] [checkLogin]After query okay
+[09-Dec-2025 20:06:03 America/New_York] [checkLogin]Rows found: 1
+[09-Dec-2025 20:06:03 America/New_York] [checkLogin]User Row: poopalini
+[09-Dec-2025 20:06:03 America/New_York] [checkLogin]Loggin in
+[09-Dec-2025 20:06:03 America/New_York] [checkLogin]Script end
+[09-Dec-2025 20:06:19 America/New_York] [checkLogin]Script start
+[09-Dec-2025 20:06:19 America/New_York] [checkLogin]After session start
+[09-Dec-2025 20:06:19 America/New_York] [checkLogin]before msqli_connect
+[09-Dec-2025 20:06:19 America/New_York] [checkLogin]after mysqli_connect okay
+[09-Dec-2025 20:06:19 America/New_York] [checkLogin]after selectdb ok
+[09-Dec-2025 20:06:19 America/New_York] [checkLogin]After Escaping input
+[09-Dec-2025 20:06:19 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'test'
+[09-Dec-2025 20:06:19 America/New_York] [checkLogin]After query okay
+[09-Dec-2025 20:06:19 America/New_York] [checkLogin]Rows found: 1
+[09-Dec-2025 20:06:19 America/New_York] [checkLogin]User Row: test
+[09-Dec-2025 20:06:19 America/New_York] [checkLogin]Loggin in
+[09-Dec-2025 20:06:19 America/New_York] [checkLogin]Script end
+[09-Dec-2025 22:31:09 America/New_York] [checkLogin]Script start
+[09-Dec-2025 22:31:09 America/New_York] [checkLogin]After session start
+[09-Dec-2025 22:31:09 America/New_York] [checkLogin]before msqli_connect
+[09-Dec-2025 22:31:09 America/New_York] [checkLogin]after mysqli_connect okay
+[09-Dec-2025 22:31:09 America/New_York] [checkLogin]after selectdb ok
+[09-Dec-2025 22:31:09 America/New_York] [checkLogin]After Escaping input
+[09-Dec-2025 22:31:09 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'test'
+[09-Dec-2025 22:31:09 America/New_York] [checkLogin]After query okay
+[09-Dec-2025 22:31:09 America/New_York] [checkLogin]Rows found: 1
+[09-Dec-2025 22:31:09 America/New_York] [checkLogin]User Row: test
+[09-Dec-2025 22:31:09 America/New_York] [checkLogin]Loggin in
+[09-Dec-2025 22:31:09 America/New_York] [checkLogin]Script end
+[10-Dec-2025 19:05:32 America/New_York] [checkLogin]Script start
+[10-Dec-2025 19:05:32 America/New_York] [checkLogin]After session start
+[10-Dec-2025 19:05:32 America/New_York] [checkLogin]before msqli_connect
+[10-Dec-2025 19:05:32 America/New_York] [checkLogin]after mysqli_connect okay
+[10-Dec-2025 19:05:32 America/New_York] [checkLogin]after selectdb ok
+[10-Dec-2025 19:05:32 America/New_York] [checkLogin]After Escaping input
+[10-Dec-2025 19:05:32 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'jackie'
+[10-Dec-2025 19:05:32 America/New_York] [checkLogin]After query okay
+[10-Dec-2025 19:05:32 America/New_York] [checkLogin]Rows found: 1
+[10-Dec-2025 19:05:32 America/New_York] [checkLogin]User Row: jackie
+[10-Dec-2025 19:05:32 America/New_York] [checkLogin]Loggin in
+[10-Dec-2025 19:05:32 America/New_York] [checkLogin]Script end
+[10-Dec-2025 19:59:00 America/New_York] [checkLogin]Script start
+[10-Dec-2025 19:59:00 America/New_York] [checkLogin]After session start
+[10-Dec-2025 19:59:00 America/New_York] [checkLogin]before msqli_connect
+[10-Dec-2025 19:59:00 America/New_York] [checkLogin]after mysqli_connect okay
+[10-Dec-2025 19:59:00 America/New_York] [checkLogin]after selectdb ok
+[10-Dec-2025 19:59:00 America/New_York] [checkLogin]After Escaping input
+[10-Dec-2025 19:59:00 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'test'
+[10-Dec-2025 19:59:00 America/New_York] [checkLogin]After query okay
+[10-Dec-2025 19:59:00 America/New_York] [checkLogin]Rows found: 1
+[10-Dec-2025 19:59:00 America/New_York] [checkLogin]User Row: test
+[10-Dec-2025 19:59:00 America/New_York] [checkLogin]Loggin in
+[10-Dec-2025 19:59:00 America/New_York] [checkLogin]Script end
+[10-Dec-2025 20:20:17 America/New_York] [checkLogin]Script start
+[10-Dec-2025 20:20:17 America/New_York] [checkLogin]After session start
+[10-Dec-2025 20:20:17 America/New_York] [checkLogin]before msqli_connect
+[10-Dec-2025 20:20:17 America/New_York] [checkLogin]after mysqli_connect okay
+[10-Dec-2025 20:20:17 America/New_York] [checkLogin]after selectdb ok
+[10-Dec-2025 20:20:17 America/New_York] [checkLogin]After Escaping input
+[10-Dec-2025 20:20:17 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'test'
+[10-Dec-2025 20:20:17 America/New_York] [checkLogin]After query okay
+[10-Dec-2025 20:20:17 America/New_York] [checkLogin]Rows found: 1
+[10-Dec-2025 20:20:17 America/New_York] [checkLogin]User Row: test
+[10-Dec-2025 20:20:17 America/New_York] [checkLogin]Password wrong
+[10-Dec-2025 20:20:17 America/New_York] [checkLogin]Script end
+[10-Dec-2025 21:36:37 America/New_York] [checkLogin]Script start
+[10-Dec-2025 21:36:37 America/New_York] [checkLogin]After session start
+[10-Dec-2025 21:36:37 America/New_York] [checkLogin]before msqli_connect
+[10-Dec-2025 21:36:37 America/New_York] [checkLogin]after mysqli_connect okay
+[10-Dec-2025 21:36:37 America/New_York] [checkLogin]after selectdb ok
+[10-Dec-2025 21:36:37 America/New_York] [checkLogin]After Escaping input
+[10-Dec-2025 21:36:37 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'jackie'
+[10-Dec-2025 21:36:37 America/New_York] [checkLogin]After query okay
+[10-Dec-2025 21:36:37 America/New_York] [checkLogin]Rows found: 1
+[10-Dec-2025 21:36:37 America/New_York] [checkLogin]User Row: jackie
+[10-Dec-2025 21:36:37 America/New_York] [checkLogin]Loggin in
+[10-Dec-2025 21:36:37 America/New_York] [checkLogin]Script end
+[10-Dec-2025 21:56:23 America/New_York] [checkLogin]Script start
+[10-Dec-2025 21:56:23 America/New_York] [checkLogin]After session start
+[10-Dec-2025 21:56:23 America/New_York] [checkLogin]before msqli_connect
+[10-Dec-2025 21:56:23 America/New_York] [checkLogin]after mysqli_connect okay
+[10-Dec-2025 21:56:23 America/New_York] [checkLogin]after selectdb ok
+[10-Dec-2025 21:56:23 America/New_York] [checkLogin]After Escaping input
+[10-Dec-2025 21:56:23 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'jackie'
+[10-Dec-2025 21:56:23 America/New_York] [checkLogin]After query okay
+[10-Dec-2025 21:56:23 America/New_York] [checkLogin]Rows found: 1
+[10-Dec-2025 21:56:23 America/New_York] [checkLogin]User Row: jackie
+[10-Dec-2025 21:56:23 America/New_York] [checkLogin]Loggin in
+[10-Dec-2025 21:56:23 America/New_York] [checkLogin]Script end
+[10-Dec-2025 23:14:54 America/New_York] [checkLogin]Script start
+[10-Dec-2025 23:14:54 America/New_York] [checkLogin]After session start
+[10-Dec-2025 23:14:54 America/New_York] [checkLogin]before msqli_connect
+[10-Dec-2025 23:14:54 America/New_York] [checkLogin]after mysqli_connect okay
+[10-Dec-2025 23:14:54 America/New_York] [checkLogin]after selectdb ok
+[10-Dec-2025 23:14:54 America/New_York] [checkLogin]After Escaping input
+[10-Dec-2025 23:14:54 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'jackie'
+[10-Dec-2025 23:14:54 America/New_York] [checkLogin]After query okay
+[10-Dec-2025 23:14:54 America/New_York] [checkLogin]Rows found: 1
+[10-Dec-2025 23:14:54 America/New_York] [checkLogin]User Row: jackie
+[10-Dec-2025 23:14:54 America/New_York] [checkLogin]Loggin in
+[10-Dec-2025 23:14:54 America/New_York] [checkLogin]Script end
+[10-Dec-2025 23:30:30 America/New_York] [checkLogin]Script start
+[10-Dec-2025 23:30:30 America/New_York] [checkLogin]After session start
+[10-Dec-2025 23:30:30 America/New_York] [checkLogin]before msqli_connect
+[10-Dec-2025 23:30:30 America/New_York] [checkLogin]after mysqli_connect okay
+[10-Dec-2025 23:30:30 America/New_York] [checkLogin]after selectdb ok
+[10-Dec-2025 23:30:30 America/New_York] [checkLogin]After Escaping input
+[10-Dec-2025 23:30:30 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'jackie'
+[10-Dec-2025 23:30:30 America/New_York] [checkLogin]After query okay
+[10-Dec-2025 23:30:30 America/New_York] [checkLogin]Rows found: 1
+[10-Dec-2025 23:30:30 America/New_York] [checkLogin]User Row: jackie
+[10-Dec-2025 23:30:30 America/New_York] [checkLogin]Loggin in
+[10-Dec-2025 23:30:30 America/New_York] [checkLogin]Script end
+[11-Dec-2025 00:07:25 America/New_York] [checkLogin]Script start
+[11-Dec-2025 00:07:25 America/New_York] [checkLogin]After session start
+[11-Dec-2025 00:07:25 America/New_York] [checkLogin]before msqli_connect
+[11-Dec-2025 00:07:25 America/New_York] [checkLogin]after mysqli_connect okay
+[11-Dec-2025 00:07:25 America/New_York] [checkLogin]after selectdb ok
+[11-Dec-2025 00:07:25 America/New_York] [checkLogin]After Escaping input
+[11-Dec-2025 00:07:25 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'jackie'
+[11-Dec-2025 00:07:25 America/New_York] [checkLogin]After query okay
+[11-Dec-2025 00:07:25 America/New_York] [checkLogin]Rows found: 1
+[11-Dec-2025 00:07:25 America/New_York] [checkLogin]User Row: jackie
+[11-Dec-2025 00:07:25 America/New_York] [checkLogin]Loggin in
+[11-Dec-2025 00:07:25 America/New_York] [checkLogin]Script end
+[11-Dec-2025 00:17:08 America/New_York] [checkLogin]Script start
+[11-Dec-2025 00:17:08 America/New_York] [checkLogin]After session start
+[11-Dec-2025 00:17:08 America/New_York] [checkLogin]before msqli_connect
+[11-Dec-2025 00:17:08 America/New_York] [checkLogin]after mysqli_connect okay
+[11-Dec-2025 00:17:08 America/New_York] [checkLogin]after selectdb ok
+[11-Dec-2025 00:17:08 America/New_York] [checkLogin]After Escaping input
+[11-Dec-2025 00:17:08 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'poopalini'
+[11-Dec-2025 00:17:08 America/New_York] [checkLogin]After query okay
+[11-Dec-2025 00:17:08 America/New_York] [checkLogin]Rows found: 1
+[11-Dec-2025 00:17:08 America/New_York] [checkLogin]User Row: poopalini
+[11-Dec-2025 00:17:08 America/New_York] [checkLogin]Loggin in
+[11-Dec-2025 00:17:08 America/New_York] [checkLogin]Script end
+[11-Dec-2025 00:21:18 America/New_York] [checkLogin]Script start
+[11-Dec-2025 00:21:18 America/New_York] [checkLogin]After session start
+[11-Dec-2025 00:21:18 America/New_York] [checkLogin]before msqli_connect
+[11-Dec-2025 00:21:18 America/New_York] [checkLogin]after mysqli_connect okay
+[11-Dec-2025 00:21:18 America/New_York] [checkLogin]after selectdb ok
+[11-Dec-2025 00:21:18 America/New_York] [checkLogin]After Escaping input
+[11-Dec-2025 00:21:18 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'jackie'
+[11-Dec-2025 00:21:18 America/New_York] [checkLogin]After query okay
+[11-Dec-2025 00:21:18 America/New_York] [checkLogin]Rows found: 1
+[11-Dec-2025 00:21:18 America/New_York] [checkLogin]User Row: jackie
+[11-Dec-2025 00:21:18 America/New_York] [checkLogin]Loggin in
+[11-Dec-2025 00:21:18 America/New_York] [checkLogin]Script end
+[11-Dec-2025 00:24:53 America/New_York] [checkLogin]Script start
+[11-Dec-2025 00:24:53 America/New_York] [checkLogin]After session start
+[11-Dec-2025 00:24:53 America/New_York] [checkLogin]before msqli_connect
+[11-Dec-2025 00:24:53 America/New_York] [checkLogin]after mysqli_connect okay
+[11-Dec-2025 00:24:53 America/New_York] [checkLogin]after selectdb ok
+[11-Dec-2025 00:24:53 America/New_York] [checkLogin]After Escaping input
+[11-Dec-2025 00:24:53 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'test'
+[11-Dec-2025 00:24:53 America/New_York] [checkLogin]After query okay
+[11-Dec-2025 00:24:53 America/New_York] [checkLogin]Rows found: 1
+[11-Dec-2025 00:24:53 America/New_York] [checkLogin]User Row: test
+[11-Dec-2025 00:24:53 America/New_York] [checkLogin]Loggin in
+[11-Dec-2025 00:24:53 America/New_York] [checkLogin]Script end
+[11-Dec-2025 01:02:58 America/New_York] [checkLogin]Script start
+[11-Dec-2025 01:02:58 America/New_York] [checkLogin]After session start
+[11-Dec-2025 01:02:58 America/New_York] [checkLogin]before msqli_connect
+[11-Dec-2025 01:02:58 America/New_York] [checkLogin]after mysqli_connect okay
+[11-Dec-2025 01:02:58 America/New_York] [checkLogin]after selectdb ok
+[11-Dec-2025 01:02:58 America/New_York] [checkLogin]After Escaping input
+[11-Dec-2025 01:02:58 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'test'
+[11-Dec-2025 01:02:58 America/New_York] [checkLogin]After query okay
+[11-Dec-2025 01:02:58 America/New_York] [checkLogin]Rows found: 0
+[11-Dec-2025 01:02:58 America/New_York] [checkLogin]user wrong
+[11-Dec-2025 01:02:58 America/New_York] [checkLogin]Script end
+[11-Dec-2025 01:08:37 America/New_York] [checkLogin]Script start
+[11-Dec-2025 01:08:37 America/New_York] [checkLogin]After session start
+[11-Dec-2025 01:08:37 America/New_York] [checkLogin]before msqli_connect
+[11-Dec-2025 01:08:37 America/New_York] [checkLogin]after mysqli_connect okay
+[11-Dec-2025 01:08:37 America/New_York] [checkLogin]after selectdb ok
+[11-Dec-2025 01:08:37 America/New_York] [checkLogin]After Escaping input
+[11-Dec-2025 01:08:37 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'test'
+[11-Dec-2025 01:08:37 America/New_York] [checkLogin]After query okay
+[11-Dec-2025 01:08:37 America/New_York] [checkLogin]Rows found: 0
+[11-Dec-2025 01:08:37 America/New_York] [checkLogin]user wrong
+[11-Dec-2025 01:08:37 America/New_York] [checkLogin]Script end
+[11-Dec-2025 01:08:41 America/New_York] [checkLogin]Script start
+[11-Dec-2025 01:08:41 America/New_York] [checkLogin]After session start
+[11-Dec-2025 01:08:41 America/New_York] [checkLogin]before msqli_connect
+[11-Dec-2025 01:08:42 America/New_York] [checkLogin]after mysqli_connect okay
+[11-Dec-2025 01:08:42 America/New_York] [checkLogin]after selectdb ok
+[11-Dec-2025 01:08:42 America/New_York] [checkLogin]After Escaping input
+[11-Dec-2025 01:08:42 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'Test'
+[11-Dec-2025 01:08:42 America/New_York] [checkLogin]After query okay
+[11-Dec-2025 01:08:42 America/New_York] [checkLogin]Rows found: 0
+[11-Dec-2025 01:08:42 America/New_York] [checkLogin]user wrong
+[11-Dec-2025 01:08:42 America/New_York] [checkLogin]Script end
+[11-Dec-2025 01:09:17 America/New_York] [checkLogin]Script start
+[11-Dec-2025 01:09:17 America/New_York] [checkLogin]After session start
+[11-Dec-2025 01:09:17 America/New_York] [checkLogin]before msqli_connect
+[11-Dec-2025 01:09:17 America/New_York] [checkLogin]after mysqli_connect okay
+[11-Dec-2025 01:09:17 America/New_York] [checkLogin]after selectdb ok
+[11-Dec-2025 01:09:17 America/New_York] [checkLogin]After Escaping input
+[11-Dec-2025 01:09:17 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'Player'
+[11-Dec-2025 01:09:17 America/New_York] [checkLogin]After query okay
+[11-Dec-2025 01:09:17 America/New_York] [checkLogin]Rows found: 1
+[11-Dec-2025 01:09:17 America/New_York] [checkLogin]User Row: Player
+[11-Dec-2025 01:09:17 America/New_York] [checkLogin]Loggin in
+[11-Dec-2025 01:09:17 America/New_York] [checkLogin]Script end
+[11-Dec-2025 10:38:24 America/New_York] [checkLogin]Script start
+[11-Dec-2025 10:38:24 America/New_York] [checkLogin]After session start
+[11-Dec-2025 10:38:24 America/New_York] [checkLogin]before msqli_connect
+[11-Dec-2025 10:38:24 America/New_York] [checkLogin]after mysqli_connect okay
+[11-Dec-2025 10:38:24 America/New_York] [checkLogin]after selectdb ok
+[11-Dec-2025 10:38:24 America/New_York] [checkLogin]After Escaping input
+[11-Dec-2025 10:38:24 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'jackie'
+[11-Dec-2025 10:38:24 America/New_York] [checkLogin]After query okay
+[11-Dec-2025 10:38:24 America/New_York] [checkLogin]Rows found: 0
+[11-Dec-2025 10:38:24 America/New_York] [checkLogin]user wrong
+[11-Dec-2025 10:38:24 America/New_York] [checkLogin]Script end
+[11-Dec-2025 10:38:33 America/New_York] [checkLogin]Script start
+[11-Dec-2025 10:38:33 America/New_York] [checkLogin]After session start
+[11-Dec-2025 10:38:33 America/New_York] [checkLogin]before msqli_connect
+[11-Dec-2025 10:38:33 America/New_York] [checkLogin]after mysqli_connect okay
+[11-Dec-2025 10:38:33 America/New_York] [checkLogin]after selectdb ok
+[11-Dec-2025 10:38:33 America/New_York] [checkLogin]After Escaping input
+[11-Dec-2025 10:38:33 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'Player'
+[11-Dec-2025 10:38:33 America/New_York] [checkLogin]After query okay
+[11-Dec-2025 10:38:33 America/New_York] [checkLogin]Rows found: 1
+[11-Dec-2025 10:38:33 America/New_York] [checkLogin]User Row: Player
+[11-Dec-2025 10:38:33 America/New_York] [checkLogin]Loggin in
+[11-Dec-2025 10:38:33 America/New_York] [checkLogin]Script end
+[11-Dec-2025 11:00:31 America/New_York] [checkLogin]Script start
+[11-Dec-2025 11:00:31 America/New_York] [checkLogin]After session start
+[11-Dec-2025 11:00:31 America/New_York] [checkLogin]before msqli_connect
+[11-Dec-2025 11:00:31 America/New_York] [checkLogin]after mysqli_connect okay
+[11-Dec-2025 11:00:31 America/New_York] [checkLogin]after selectdb ok
+[11-Dec-2025 11:00:31 America/New_York] [checkLogin]After Escaping input
+[11-Dec-2025 11:00:31 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'poop'
+[11-Dec-2025 11:00:31 America/New_York] [checkLogin]After query okay
+[11-Dec-2025 11:00:31 America/New_York] [checkLogin]Rows found: 0
+[11-Dec-2025 11:00:31 America/New_York] [checkLogin]user wrong
+[11-Dec-2025 11:00:31 America/New_York] [checkLogin]Script end
+[11-Dec-2025 11:04:40 America/New_York] [checkLogin]Script start
+[11-Dec-2025 11:04:40 America/New_York] [checkLogin]After session start
+[11-Dec-2025 11:04:40 America/New_York] [checkLogin]before msqli_connect
+[11-Dec-2025 11:04:40 America/New_York] [checkLogin]after mysqli_connect okay
+[11-Dec-2025 11:04:40 America/New_York] [checkLogin]after selectdb ok
+[11-Dec-2025 11:04:40 America/New_York] [checkLogin]After Escaping input
+[11-Dec-2025 11:04:40 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'allan'
+[11-Dec-2025 11:04:40 America/New_York] [checkLogin]After query okay
+[11-Dec-2025 11:04:40 America/New_York] [checkLogin]Rows found: 0
+[11-Dec-2025 11:04:40 America/New_York] [checkLogin]user wrong
+[11-Dec-2025 11:04:40 America/New_York] [checkLogin]Script end
+[11-Dec-2025 11:04:46 America/New_York] [checkLogin]Script start
+[11-Dec-2025 11:04:46 America/New_York] [checkLogin]After session start
+[11-Dec-2025 11:04:46 America/New_York] [checkLogin]before msqli_connect
+[11-Dec-2025 11:04:46 America/New_York] [checkLogin]after mysqli_connect okay
+[11-Dec-2025 11:04:46 America/New_York] [checkLogin]after selectdb ok
+[11-Dec-2025 11:04:46 America/New_York] [checkLogin]After Escaping input
+[11-Dec-2025 11:04:46 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'allan'
+[11-Dec-2025 11:04:46 America/New_York] [checkLogin]After query okay
+[11-Dec-2025 11:04:46 America/New_York] [checkLogin]Rows found: 0
+[11-Dec-2025 11:04:46 America/New_York] [checkLogin]user wrong
+[11-Dec-2025 11:04:46 America/New_York] [checkLogin]Script end
+[11-Dec-2025 11:04:48 America/New_York] [checkLogin]Script start
+[11-Dec-2025 11:04:48 America/New_York] [checkLogin]After session start
+[11-Dec-2025 11:04:48 America/New_York] [checkLogin]before msqli_connect
+[11-Dec-2025 11:04:48 America/New_York] [checkLogin]after mysqli_connect okay
+[11-Dec-2025 11:04:48 America/New_York] [checkLogin]after selectdb ok
+[11-Dec-2025 11:04:48 America/New_York] [checkLogin]No uname / pass in POST
+[11-Dec-2025 11:05:01 America/New_York] [checkLogin]Script start
+[11-Dec-2025 11:05:01 America/New_York] [checkLogin]After session start
+[11-Dec-2025 11:05:01 America/New_York] [checkLogin]before msqli_connect
+[11-Dec-2025 11:05:01 America/New_York] [checkLogin]after mysqli_connect okay
+[11-Dec-2025 11:05:01 America/New_York] [checkLogin]after selectdb ok
+[11-Dec-2025 11:05:01 America/New_York] [checkLogin]After Escaping input
+[11-Dec-2025 11:05:01 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'allanallan'
+[11-Dec-2025 11:05:01 America/New_York] [checkLogin]After query okay
+[11-Dec-2025 11:05:01 America/New_York] [checkLogin]Rows found: 0
+[11-Dec-2025 11:05:01 America/New_York] [checkLogin]user wrong
+[11-Dec-2025 11:05:01 America/New_York] [checkLogin]Script end
+[11-Dec-2025 16:31:46 America/New_York] [checkLogin]Script start
+[11-Dec-2025 16:31:46 America/New_York] [checkLogin]After session start
+[11-Dec-2025 16:31:46 America/New_York] [checkLogin]before msqli_connect
+[11-Dec-2025 16:31:46 America/New_York] [checkLogin]after mysqli_connect okay
+[11-Dec-2025 16:31:46 America/New_York] [checkLogin]after selectdb ok
+[11-Dec-2025 16:31:46 America/New_York] [checkLogin]After Escaping input
+[11-Dec-2025 16:31:46 America/New_York] [checkLogin]query: SELECT * FROM users WHERE username = 'Player'
+[11-Dec-2025 16:31:46 America/New_York] [checkLogin]After query okay
+[11-Dec-2025 16:31:46 America/New_York] [checkLogin]Rows found: 1
+[11-Dec-2025 16:31:46 America/New_York] [checkLogin]User Row: Player
+[11-Dec-2025 16:31:46 America/New_York] [checkLogin]Loggin in
+[11-Dec-2025 16:31:46 America/New_York] [checkLogin]Script end

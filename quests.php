@@ -3,20 +3,21 @@
 
     $id = 0;
 
-if (isset($_SESSION['id'])) {
-        global $_SESSION, $id;
-        $character = $_SESSION['character'];
-        $id = $_SESSION['id'];
-    } else {
-        header("location:login.php");
-    }
+    if (isset($_SESSION['id'])) {
+            global $_SESSION, $id;
+            $character = $_SESSION['character'];
+            $id = $_SESSION['id'];
+        } else {
+            header("location:login.php");
+        }
 
-    $conn = mysqli_connect("localhost", "root", "");
-    mysqli_select_db($conn, "LandsOfLogic");
+        $conn = mysqli_connect("sql110.infinityfree.com", "if0_40582300", "uj0krRpEXI");
+        mysqli_select_db($conn, "if0_40582300_LandsOfLogic");
 
-    $questName = $questType = $questDescription = "";
-    $questReward = $questStatus = $questId = 0;
-    $amountOfQuests = 0;
+
+        $questName = $questType = $questDescription = "";
+        $questReward = $questStatus = $questId = 0;
+        $amountOfQuests = 0;
 
     function showActiveQuest() {
         global $conn, $questName, $questType, $questDescription, $questReward, $id, $questStatus, $activeQuestArray, $questId;
@@ -41,7 +42,7 @@ if (isset($_SESSION['id'])) {
     function isActiveQuest() {
         global $conn, $id;
 
-        $query = mysqli_query($conn, "SELECT * FROM Quests WHERE questStatus = 1 AND playerId = '$id'");
+        $query = mysqli_query($conn, "SELECT * FROM quests WHERE questStatus = 1 AND playerId = '$id'");
 
         $count = mysqli_num_rows($query);
 
@@ -54,7 +55,7 @@ if (isset($_SESSION['id'])) {
 
     function createHelpWantedQuests($amountOfQuests) {
         if ($amountOfQuests > 0) {
-            global $conn, $id, $helpWantedArray, $amountOfQuests;
+            global $conn, $id;
             $questType = $questGiver = $giverProfession = $questDescription = $naturalForce = $petName = $petType = "";
             $questReward = $questStatus = 0;
 
@@ -63,7 +64,7 @@ if (isset($_SESSION['id'])) {
             $f_petNames = file("petNames.txt");
             $f_petTypes = file("petTypes.txt");
             $f_naturalForces = file("naturalForces.txt");
-            $type = rand(1, 2);
+            $type = rand(1, 3);
 
             $questReward = rand(1, 5);
             $questGiver = $f_names[rand(0, (count($f_names) - 1))];
@@ -89,28 +90,16 @@ if (isset($_SESSION['id'])) {
                     $petType = $f_petTypes[rand(0, (count($f_petTypes) - 1))];
                     $questDescription = "$questGiver, a citizen of Arithmetia, needs your help! Their $petType named 
                         $petName escaped and they need help finding them!";
+                    $questName = "Finding a Lost Pet";
                     break;
             }
 
             $index = 4 - $amountOfQuests;
 
-            $helpWantedArray[$index][0] = $questType;
-            $helpWantedArray[$index][1] = $questDescription;
-            $helpWantedArray[$index][2] = $questName;
-            $helpWantedArray[$index][3] = $questReward;
-            $helpWantedArray[$index][4] = $questGiver;
-            $helpWantedArray[$index][5] = $naturalForce;
-            $helpWantedArray[$index][6] = $petName;
-
-            $helpWantedArray = array(
-                    array($questType, $questDescription, $questName, $questReward, $questGiver, $naturalForce, $petName),
-            );
 
             mysqli_query($conn, "INSERT INTO quests (playerId, questType, questDescription, questName, questReward, 
                         questGiver, naturalForce, petName, questStatus) VALUES ('$id', '$questType', '$questDescription', 
                         '$questName', '$questReward', '$questGiver', '$naturalForce', '$petName', '$questStatus')");
-
-
 
             $amountOfQuests--;
 
@@ -138,17 +127,15 @@ if (isset($_SESSION['id'])) {
     function countHelpWantedNeeded() {
         global $conn, $id;
 
-        $query = mysqli_query($conn, "SELECT * FROM Quests WHERE questStatus = 0 AND playerId = '$id'");
+        $query = mysqli_query($conn, "SELECT * FROM quests WHERE questStatus = 0 AND playerId = '$id'");
 
         $count = mysqli_num_rows($query);
 
-        if ($count >= 4) {
-            $count = 3;
+        if ($count >= 3) {
+            return 0;
         }
 
         $temp = 3 - $count;
-
-        helpWantedPopulate($count);
 
         return $temp;
     }
@@ -157,36 +144,43 @@ if (isset($_SESSION['id'])) {
         global $conn, $id, $helpWantedArray;
         $questType = $questName = $questGiver = $questDescription = $naturalForce = $petName = "";
         $questReward = $questStatus = 0;
+        $helpWantedArray = array();
 
-        $query = mysqli_query($conn, "SELECT * FROM Quests WHERE questStatus = 0 AND playerId = '$id'");
+        $query = mysqli_query($conn, "SELECT * FROM quests WHERE questStatus = 0 AND playerId = '$id' LIMIT ".intval(3));
 
         $temp = 1;
-        $count = $count +1;
-
         while ($row = mysqli_fetch_assoc($query)) {
-            if ($count > 1) {
-                $questType = $row['questType'];
-                $questDescription = $row['questDescription'];
-                $questReward = $row['questReward'];
-                $questGiver = $row['questGiver'];
-                $naturalForce = $row['naturalForce'];
-                $petName = $row['petName'];
-                $questId = $row['questId'];
-                $questName = $row['questName'];
+            $questType = $row['questType'];
+            $questDescription = $row['questDescription'];
+            $questReward = $row['questReward'];
+            $questGiver = $row['questGiver'];
+            $naturalForce = $row['naturalForce'];
+            $petName = $row['petName'];
+            $questId = $row['questId'];
+            $questName = $row['questName'];
 
-                $helpWantedArray[$temp][0] = $questType;
-                $helpWantedArray[$temp][1] = $questDescription;
-                $helpWantedArray[$temp][2] = $questReward;
-                $helpWantedArray[$temp][3] = $questGiver;
-                $helpWantedArray[$temp][4] = $naturalForce;
-                $helpWantedArray[$temp][5] = $petName;
-                $helpWantedArray[$temp][6] = $questId;
-                $helpWantedArray[$temp][7] = $questName;
+            $helpWantedArray[$temp][0] = $questType;
+            $helpWantedArray[$temp][1] = $questDescription;
+            $helpWantedArray[$temp][2] = $questReward;
+            $helpWantedArray[$temp][3] = $questGiver;
+            $helpWantedArray[$temp][4] = $naturalForce;
+            $helpWantedArray[$temp][5] = $petName;
+            $helpWantedArray[$temp][6] = $questId;
+            $helpWantedArray[$temp][7] = $questName;
 
-                $count--;
-                $temp++;
-            }
+            $temp++;
         }
+        
+    }
+
+	$helpWantedArray = array();
+
+	if(!isActiveQuest()) {
+        $needed = countHelpWantedNeeded();
+        if ($needed > 0) {
+            createHelpWantedQuests($needed);
+        }
+        helpWantedPopulate(3);
     }
 ?>
 
@@ -214,10 +208,6 @@ if (isset($_SESSION['id'])) {
                 <h1>The Market</h1>
             </a>
 
-            <a href="arena.php" class="nav">
-                <h1>The Arena</h1>
-            </a>
-
             <a href="account.php" class="nav">
                 <h1>Account</h1>
             </a>
@@ -231,13 +221,14 @@ if (isset($_SESSION['id'])) {
                 <h3 id="currentQuestReward">Reward: <?php echo $questReward?> Gold</h3>
                 <p id="currentQuestDescription"><?php echo $questDescription?></p>
                 </a>
-                <a href="quitQuest.php?questId=<?php echo $questId?>">
-                    <p id="quitQuest">Quit Quest</p>
+                <a href="quitQuest.php?questId=<?php echo $questId; ?>"
+   					onclick="localStorage.removeItem('questIndex_<?php echo $questId; ?>')">
+   					 <p id="quitQuest">Quit Quest</p>
                 </a>
             </article>
         </section>
 
-        <section <?php if(!isActiveQuest()){createHelpWantedQuests(countHelpWantedNeeded());}else{Print "hidden";}?>>
+        <section <?php if(isActiveQuest()){Print "hidden";}?>>
             <article class="helpWanted" id="helpWanted1" <?php showHelpWantedQuests(1);?>>
                 <a href="playQuest.php?questId=<?php echo $questId?>" >
                 <h1 id="helpWantedName"><?php echo $questName?>: A <?php echo $questType?> Quest!</h1>
@@ -255,7 +246,7 @@ if (isset($_SESSION['id'])) {
 
             <article class="helpWanted" id="helpWanted3" <?php showHelpWantedQuests(3);?>>
                 <a href="playQuest.php?questId=<?php echo $questId?>">
-                <h1 id="helpWantedName"><?php echo $questName?></h1>
+                <h1 id="helpWantedName"><?php echo $questName?>: A <?php echo $questType?> Quest!</h1>
                 <h3 id="helpWantedReward">Reward: <?php echo $questReward?> Gold</h3>
                 <p id="helpWantedDescription"><?php echo $questDescription?></p>
                 </a>

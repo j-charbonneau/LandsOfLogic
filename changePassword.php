@@ -1,25 +1,47 @@
 <?php
     session_start();
 
-    if(isset($_SESSION['id'])) {
-        global $_SESSION;
+    if (isset($_SESSION['id'])) {
         $id = $_SESSION['id'];
         $character = $_SESSION['character'];
     } else {
-        header("location:login.php");
+        header("location: login.php");
+        exit;
     }
 
-    $password = "";
+    $conn = mysqli_connect("sql110.infinityfree.com", "if0_40582300", "uj0krRpEXI", "if0_40582300_LandsOfLogic");
 
-    $conn = mysqli_connect("localhost", "root", "", "landsoflogic");
+    if (!$conn) {
+        die("Database connection failed: " . mysqli_connect_error());
+    }
 
-    $query = mysqli_query($conn, "SELECT * FROM users WHERE id = '$id'");
+    $message = "";
 
-    while ($row = mysqli_fetch_assoc($query)) {
-        $password = $row['password'];
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $password = $_POST['password'] ?? '';
+        $verifyPassword = $_POST['verifyPassword'] ?? '';
+
+        if ($password !== $verifyPassword) {
+            $message = "Passwords do not match.";
+        } elseif ($password === '') {
+            $message = "Password cannot be empty.";
+        } else {
+            $passwordEsc = mysqli_real_escape_string($conn, $password);
+
+            $updateSql = " UPDATE users  SET password = '$passwordEsc' WHERE playerId = '$id'";
+
+            if (mysqli_query($conn, $updateSql)) {
+                echo "<script>
+                        alert('Password updated successfully.');
+                        window.location.href = 'account.php';
+                      </script>";
+                exit;
+            } else {
+                $message = 'Error updating password: ' . mysqli_error($conn);
+            }
+        }
     }
 ?>
-
 
 <html>
     <head>
@@ -34,7 +56,7 @@
 
         <nav>
             <a href="home.php" class="nav">
-                <h1><?php echo $character ?></h1>
+                <h1><?php echo htmlspecialchars($character); ?></h1>
             </a>
 
             <a href="quests.php" class="nav">
@@ -45,17 +67,20 @@
                 <h1>The Market</h1>
             </a>
 
-            <a href="arena.php" class="nav">
-                <h1>The Arena</h1>
-            </a>
-
             <a href="account.php" class="nav">
                 <h1>Account</h1>
             </a>
         </nav>
 
-        <section class = "changePassword">
+        <section class="changePassword">
             <h1>Change Password</h1>
+
+            <?php
+                if (!empty($message)) {
+                    Print '<p class="error">' . htmlspecialchars($message) . '</p>';
+                }
+            ?>
+
             <form action="changePassword.php" method="post">
                 <label for="password">New Password:</label>
                 <input type="password" name="password" id="password" required>
@@ -68,17 +93,3 @@
         </section>
     </body>
 </html>
-
-<?php
-    if($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $password = $_POST['password'];
-        $verifyPassword = $_POST['verifyPassword'];
-
-        if($password == $verifyPassword){
-            $query = mysqli_query($conn, "UPDATE users SET password = '$password' WHERE id = '$id'");
-        } else {
-            Print '<script>alert("Passwords do not match.");</script>';
-            Print '<script>window.location.assign("changePassword.php");</script>';
-        }
-    }
-?>

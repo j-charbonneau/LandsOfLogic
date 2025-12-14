@@ -23,7 +23,7 @@
 
         <nav>
             <a href="home.php" class="nav">
-                <h1><?php echo $character ?></h1>
+                <h1><?php Print $character ?></h1>
             </a>
 
             <a href="quests.php" class="nav">
@@ -32,10 +32,6 @@
 
             <a href="shops.php" class="nav">
                 <h1>The Market</h1>
-            </a>
-
-            <a href="arena.php" class="nav">
-                <h1>The Arena</h1>
             </a>
 
             <a href="account.php" class="nav">

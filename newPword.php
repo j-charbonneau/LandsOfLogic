@@ -1,5 +1,6 @@
 <?php
-    $conn = mysqli_connect("localhost", "root", "");
+    $conn = mysqli_connect("sql110.infinityfree.com", "if0_40582300", "uj0krRpEXI");
+    mysqli_select_db($conn, "if0_40582300_LandsOfLogic");
 
     session_start();
 

@@ -13,7 +13,7 @@
 
 <html>
     <head>
-        <title><?php echo $character ?>: Account Page</title>
+        <title><?php Print $character ?>: Account Page</title>
         <link rel="stylesheet" type="text/css" href="landsOfLogic.css">
     </head>
 
@@ -24,7 +24,7 @@
 
         <nav>
             <a href="home.php" class="nav">
-                <h1><?php echo $character ?></h1>
+                <h1><?php Print $character ?></h1>
             </a>
 
             <a href="quests.php" class="nav">
@@ -33,10 +33,6 @@
 
             <a href="shops.php" class="nav">
                 <h1>The Market</h1>
-            </a>
-
-            <a href="arena.php" class="nav">
-                <h1>The Arena</h1>
             </a>
 
             <a href="account.php" class="nav">
@@ -50,10 +46,11 @@
                 <a href="updateEmail.php">Update Email</a>
                 <a href="changePassword.php">Change Password</a>
                 <a href="logout.php">Logout</a>
-                <a href="deleteAccount.php">Delete Account</a>
+                <form action="deleteAccount.php" method="post"
+                    onsubmit="return confirm('Are you sure you want to permanently delete your account?');">
+                     <input type="submit" value="Delete Account">
+                </form>
             </article>
-
-
         </section>
     </body>
 </html>

@@ -1,9 +1,9 @@
 <?php
-    $conn = mysqli_connect("localhost", "root", "");
+   $conn = mysqli_connect("sql110.infinityfree.com", "if0_40582300", "uj0krRpEXI");
+    mysqli_select_db($conn, "if0_40582300_LandsOfLogic");
 
     $email = mysqli_real_escape_string($conn, $_POST['email']);
 
-    mysqli_select_db($conn, "landsOfLogic");
     $query = mysqli_query($conn,"SELECT username, id FROM users WHERE email = '$email'");
 
     $exists = mysqli_num_rows($query);
@@ -31,7 +31,7 @@
         $output .= '<p>Please click on the link below to reset your password.</p>';
         $output .= '<hr>';
         //to change to whatever when hosted
-        $output .= '<p><a href="newPassword.php?id='.$id.'">Reset Password</a></p>';
+        $output .= '<p><a href="landsoflogic.great-site.net/newPassword.php?id='.$id.'">Reset Password</a></p>';
         $output .= '<hr>';
         $output .= '<p>If you did not make this request, please ignore this email.</p>';
         $output .= 'Thank you, ';

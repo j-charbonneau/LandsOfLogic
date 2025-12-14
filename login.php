@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Login</title>
+    	<link rel="stylesheet" href="landsOfLogic.css">
     </head>
 
     <body>

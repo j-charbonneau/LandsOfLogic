@@ -2,17 +2,18 @@
     session_start();
 
     if(isset($_SESSION['id'])){
-        global $_SESSION;
         $character = $_SESSION['character'];
         $id = $_SESSION['id'];
     } else {
-        header("location:login.php");
+        header("location: login.php");
+        exit;
     }
 
     $physicalStat = $mentalStat = $socialStat = $maxHealth = $health = $maxShield = $shield = $gold = 0;
 
-    $conn = mysqli_connect("localhost", "root", "");
-    mysqli_select_db($conn, "LandsOfLogic");
+    $conn = mysqli_connect("sql110.infinityfree.com", "if0_40582300", "uj0krRpEXI");
+    mysqli_select_db($conn, "if0_40582300_LandsOfLogic");
+
 
     $query = mysqli_query($conn, "SELECT * FROM users WHERE playerId = '$id'");
 
@@ -24,65 +25,13 @@
         $health = $row['health'];
         $maxShield = $row['maxShield'];
         $shield = $row['shield'];
+        $gold = $row['gold'];
     }
-
-    function changeHealth($type) {
-        $healing = 0;
-        global $maxHealth, $health;
-
-        switch ($type) {
-            case "Normal Health Potion":
-                $healing = rand(5, 10);
-                break;
-            case "Strong Health Potion":
-                $healing = rand(10, $maxHealth);
-                break;
-            case "Massive Health Potion":
-                $healing = $maxHealth;
-                break;
-        }
-
-        $health += $healing;
-
-        if ($health > $maxHealth) {
-            $health = $maxHealth;
-        }
-    }
-
-    function changeShield($type) {
-        $shielding = 0;
-        global $maxShield, $shield;
-
-        switch ($type) {
-            case "Normal Shield Potion":
-                $shielding = rand(1, 4);
-                break;
-            case "Strong Shield Potion":
-                $shielding = rand(4, $maxShield);
-                break;
-            case "massive Shield Potion":
-                $shielding = $maxShield;
-                break;
-        }
-
-        $shield += $shielding;
-        if ($shield > $maxShield) {
-            $shield = $maxShield;
-        }
-    }
-
-    function remove($type) {
-        global $conn;
-        global $id;
-
-        mysqli_query($conn, "UPDATE inventory SET count = count - 1 WHERE playerId = '$id'");
-    }
-
 ?>
 
 <html>
     <head>
-        <title><?php echo $character ?>: Character Page</title>
+        <title><?php Print $character ?>: Character Page</title>
         <link rel="stylesheet" type="text/css" href="landsOfLogic.css">
     </head>
 
@@ -92,132 +41,79 @@
         </header>
 
         <nav>
-            <a href="home.php" class="nav">
-                <h1><?php echo $character ?></h1>
-            </a>
+            <div class="navItem">
+                <a href="home.php" class="nav">
+                    <h1><?php Print $character ?></h1>
+                </a>
+            </div>
 
-            <a href="quests.php" class="nav">
-                <h1>Quest Board</h1>
-            </a>
+            <div class="navItem">
+                <a href="quests.php" class="nav">
+                    <h1>Quest Board</h1>
+                </a>
+            </div>
 
-            <a href="shops.php" class="nav">
-                <h1>The Market</h1>
-            </a>
-
-            <a href="arena.php" class="nav">
-                <h1>The Arena</h1>
-            </a>
-
-            <a href="account.php" class="nav">
-                <h1>Account</h1>
-            </a>
+            <div class="navItem">
+                <a href="shops.php" class="nav">
+                    <h1>The Market</h1>
+                </a>
+            </div>
+            
+ 			<div class="navItem">
+                <a href="account.php" class="nav">
+                    <h1>Account</h1>
+                </a>
+            </div>
+            
         </nav>
 
         <section>
             <article class="stats">
                 <h1 id="stats">Character Stats</h1>
-                <p>Physical Stat: <?php echo $physicalStat?></p>
-                <p>Mental Stat: <?php echo $mentalStat?></p>
-                <p>Social Stat: <?php echo $socialStat?></p>
+                <p>Physical Stat: <?php Print $physicalStat?></p>
+                <p>Mental Stat: <?php Print $mentalStat?></p>
+                <p>Social Stat: <?php Print $socialStat?></p>
             </article>
 
             <article class="health">
-                <h1>Health: <?php echo $health?> / <?php echo $maxHealth?></h1>
-                <h3>Shield: <?php echo $shield?> / <?php echo $maxShield?></h3>
+                <h1>Health: <?php Print $health?> / <?php Print $maxHealth?></h1>
+                <h3>Shield: <?php Print $shield?> / <?php Print $maxShield?></h3>
             </article>
 
-            <article class="inventory">
+           <article class="inventory">
                 <h1 id="inventory">Inventory</h1>
-                <h3>Gold: <?php echo $gold?></h3>
+                <h3>Gold: <?php Print $gold; ?></h3>
 
-                <span id="inventoryTable">
-                    <tr>
-                        <th>Item Name</th>
-                        <th>Item Description</th>
-                        <th>Item Count</th>
-                        <th></th>
-                    </tr>
-
+                <table id="inventoryTable">
+                    <thead>
+                        <tr>
+                            <th>Item Name</th>
+                            <th>Item Description</th>
+                            <th>Item Count</th>
+                            <th>Use</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <?php
-                        $query = mysqli_query($conn, "SELECT * FROM inventory WHERE playerId = '$id' AND itemCount > 0");
+                        $query = mysqli_query(
+                            $conn, "SELECT * FROM inventory WHERE playerId = '$id' AND itemCount > 0");
 
-                        while($row = mysqli_fetch_assoc($query)){
+                        while ($row = mysqli_fetch_assoc($query)) {
                             Print "<tr>";
-                                Print "<td>".$row['itemName']."</td>";
-                                Print "<td>".$row['itemDescription']."</td>";
-                                Print "<td>".$row['itemCount']."</td>";
-                                $itemName = $row['itemName'];
-                                Print "<td><button onclick='useItem(";
-                                Print $itemName;
-                                Print ")'>Use ";
-                                Print $itemName;
-                                Print "</button></td>";
+                            Print "<td>" . htmlspecialchars($row['itemName']) . "</td>";
+                            Print "<td>" . htmlspecialchars($row['itemDescription']) . "</td>";
+                            Print "<td>" . (int)$row['itemCount'] . "</td>";
+                            Print "<td>
+                                    <form method='post' action='useItem.php' style='margin:0; display:inline;'>
+                                        <input type='hidden' name='itemName' value='" . htmlspecialchars($row['itemName'], ENT_QUOTES) . "'>
+                                        <input type='submit' value='Use " . htmlspecialchars($row['itemName']) . "'>
+                                    </form>
+                                  </td>";
+                            Print "</tr>";
                         }
                     ?>
-
-                    <script>
-                        function useItem(itemName){
-                            switch(itemName){
-                                case "Physical Book":
-                                    <?php
-                                        $physicalStat++;
-                                        remove("Physical Book");
-                                    ?>
-                                    break;
-                                case "Mental Book":
-                                    <?php
-                                        $mentalStat++;
-                                        remove("Mental Book");
-                                    ?>
-                                    break;
-                                case "Social Book":
-                                    <?php
-                                        $socialStat++;
-                                        remove("Social Book");
-                                    ?>
-                                    break;
-                                case "Normal Health Potion":
-                                    <?php
-                                        changeHealth("Normal Health Potion");
-                                        remove("Normal Health Potion");
-                                    ?>
-                                    break;
-                                case "Strong Health Potion":
-                                    <?php
-                                        changeHealth("Strong Health Potion");
-                                        remove("Strong Health Potion");
-                                    ?>
-                                    break;
-                                case "Massive Health Potion":
-                                    <?php
-                                        changeHealth("Massive Health Potion");
-                                        remove("Massive Health Potion");
-                                    ?>
-                                    break;
-                                case "Normal Shield Potion":
-                                    <?php
-                                        changeShield("Normal Shield Potion");
-                                        remove("Normal Shield Potion");
-                                    ?>
-                                    break;
-                                case "Strong Shield Potion":
-                                    <?php
-                                        changeShield("Strong Shield Potion");
-                                        remove("Strong Shield Potion");
-                                    ?>
-                                    break;
-                                case "Massive Shield Potion":
-                                    <?php
-                                        changeShield("Massive Shield Potion");
-                                        remove("Massive Shield Potion");
-                                    ?>
-                            }
-                            location.reload();
-                        }
-                    </script>
-
-                </span>
-
+                    </tbody>
+                </table>
             </article>
         </section>
     </body>

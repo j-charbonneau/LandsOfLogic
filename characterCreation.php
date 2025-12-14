@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Character Creation</title>
+    	<link rel="stylesheet" href="landsOfLogic.css" />
     </head>
 
     <?php
@@ -44,8 +45,8 @@
 </html>
 
 <?php
-    $conn = mysqli_connect("localhost", "root", "");
-
+	$conn = mysqli_connect("sql110.infinityfree.com", "if0_40582300", "uj0krRpEXI");
+        mysqli_select_db($conn, "if0_40582300_LandsOfLogic");
     $physicalStat = $mentalStat = $socialStat = 2;
     $health = $maxHealth = $shield = $maxShield = 0;
 
@@ -71,8 +72,6 @@
         $shield = $maxShield;
 
         $id = $_SESSION['id'];
-
-        mysqli_select_db($conn, "landsoflogic");
 
         mysqli_query($conn, "UPDATE users SET physicalStat = '$physicalStat', mentalStat = '$mentalStat', 
                  socialStat = '$socialStat', health = '$health', maxHealth = '$maxHealth', shield = '$shield', 

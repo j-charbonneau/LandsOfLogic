@@ -46,7 +46,8 @@
 </html>
 
 <?php
-    $conn = mysqli_connect("localhost", "root", "");
+    $conn = mysqli_connect("sql110.infinityfree.com", "if0_40582300", "uj0krRpEXI");
+        mysqli_select_db($conn, "if0_40582300_LandsOfLogic");
 
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $username = mysqli_real_escape_string($conn, $_POST['username']);
@@ -56,7 +57,7 @@
         $bool = true;
         $tableUsers = $tableEmails = $id = "";
 
-        mysqli_select_db($conn, "landsoflogic");
+       
 
         $query = mysqli_query($conn, "SELECT * FROM users");
 
@@ -68,12 +69,14 @@
                 $bool = false;
                 Print '<script>alert("Username already exists!");</script>';
                 Print '<script>window.location.assign("register.php");</script>';
+                exit;
             }
 
             if($email == $tableEmails){
                 $bool = false;
                 Print '<script>alert("Email already exists!");</script>';
                 Print '<script>window.location.assign("register.php");</script>';
+                exit;
             }
         }
 
@@ -81,20 +84,24 @@
             $bool = false;
             Print '<script>alert("Passwords Do Not Match!");</script>';
             Print '<script>window.location.assign("register.php");</script>';
+            exit;
         }
 
-        mysqli_query($conn, "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password')");
+        if ($bool) {
+                mysqli_query($conn, "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password')");
 
-        $query = mysqli_query($conn, "SELECT * FROM users WHERE username = '$username'");
+            $query = mysqli_query($conn, "SELECT * FROM users WHERE username = '$username'");
+                while($row = mysqli_fetch_assoc($query)){
+                $id = $row['playerId'];
+           		 }
 
-        while($row = mysqli_fetch_assoc($query)){
-            $id = $row['playerId'];
-            Print $id;
+            $_SESSION['id'] = $id;
+                    Print '<script>window.location.assign("characterCreation.php");</script>';
+
         }
+        
 
-        $_SESSION['id'] = $id;
-
-        Print '<script>window.location.assign("characterCreation.php");</script>';
+  
     }
 ?>
 
